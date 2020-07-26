@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Yuji Harada Portfolio</title>
+  <script src="https://kit.fontawesome.com/9844761fc9.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- [******************] -->
+  <!-- [ header ] -->
+  <!-- [******************] -->
+  <header>
+    <nav>
+      <div>
+        <a href="#about">Yuji Harada Portfolio</a>
+      </div>
+      <ul>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#services">Services</a>
+        </li>
+        <li>
+          <a href="#works">Works</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- ハンバーガーメニュー -->
+    <div class="menu-wrap">
+      <input type="checkbox" class="toggler">
+      <div class="hamburger">
+        <div></div>
+      </div>
+      <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#works">Works</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </header>
+  <!-- [******************] -->
+  <!-- [ article ] -->
+  <!-- [******************] -->
+  <article>
+    <section id="about">
+      <p>原田勇二と申します。</p>
+    </section>
+
+
+    <section id="services" class="sa sa–up">
+      <h1>Services</h1>
+      <p>ご提供できるサービス一覧です。お気軽にお見積もりをお問い合わせください。</p>
+      <div class="container">
+        <div class="box">
+          <i class="fas fa-laptop fa-4x"></i>
+          <h2>LP制作</h2>
+          <p>お客様のご要望をヒアリングし、ご要望に沿ったランディングページを作成いたします。</p>
+        </div>
+        <div class="box">
+          <i class="fas fa-keyboard fa-4x"></i>
+          <h2>コーディング</h2>
+          <p>お客様よりお預かりしたデザインデータを基に、適切にコーディングいたします。</p>
+        </div>
+        <div class="box">
+          <i class="fas fa-mobile-alt fa-4x"></i>
+          <h2>レスポンシブ対応</h2>
+          <p>PC・タブレット・スマホ、どの端末でもストレスなく閲覧できるようにレスポンシブ対応いたします。</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="works" class="sa sa–up">
+      <h1>Works</h1>
+      <p>過去に制作したウェブサイトです。画像のクリックでご覧いただけます。</p>
+      <div>
+        <ul>
+          <li><a href="img/works_1.png" target="_blank" rel="noopener"><img src="img/works_1_thu.png" alt=""></a>
+            <p>架空ホームページ模写<br>（全4ページ）</p>
+            <p></p>
+          </li>
+          <li><a href="img/works_2.png" target="_blank" rel="noopener"><img src="img/works_2_thu.png" alt=""></a>
+            <p>架空企業サイト模写<br>（全6ページ）スマートフォン対応</p>
+          </li>
+          <li><a href="img/works_3.png" target="_blank" rel="noopener"><img src="img/works_3_thu.png" alt=""></a>
+            <p>airbnb様LPサイト模写1<br>スマートフォン対応</p>
+          </li>
+          <li><a href="img/works_4.png" target="_blank" rel="noopener"><img src="img/works_4_thu.png" alt=""></a>
+            <p>airbnb様LPサイト模写2<br>タブレット/スマートフォン対応</p>
+          </li>
+          <li><a href="img/works_5.png" target="_blank" rel="noopener"><img src="img/works_5_thu.png" alt=""></a>
+            <p>Frog School様LPサイト模写<br>タブレット/スマートフォン対応</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+    <section id="contact">
+      <h1>Contact</h1>
+      <p>以下のフォームをご入力いただき、送信ボタンを押してください。</p>
+      <form action="" method="POST" class="sa sa–up">
+        <label for="name">お名前</label>
+        <input type="text" id="name" name="name">
+        <label for="email">メールアドレス</label>
+        <input type="email" id="email" name="email">
+        <label for="message">お問い合わせ内容</label>
+        <textarea id="message" name="message"></textarea>
+        <input type="submit" value="送信">
+      </form>
+    </section>
+  </article>
+
+
+  <footer>
+    <p>&copy; Copyright - Yuji Harada, 2020 All Rights Reserved.</p>
+  </footer>
+
+
+  <script>
+    var scrollAnimationClass = 'sa';
+    var scrollAnimationShowClass = 'show';
+    var triggerMarginDefault = 300;
+
+    var scrollAnimationElm = document.querySelectorAll('.' + scrollAnimationClass);
+    var scrollAnimationFunc = function () {
+      var dataMargin = scrollAnimationClass + '_margin';
+      var dataTrigger = scrollAnimationClass + '_trigger';
+      var dataDelay = scrollAnimationClass + '_delay';
+      for (var i = 0; i < scrollAnimationElm.length; i++) {
+        var triggerMargin = triggerMarginDefault;
+        var elm = scrollAnimationElm[i];
+        var showPos = 0;
+        if (elm.dataset[dataMargin] != null) {
+          triggerMargin = parseInt(elm.dataset[dataMargin]);
+        }
+        if (elm.dataset[dataTrigger]) {
+          showPos = document.querySelector(elm.dataset[dataTrigger]).getBoundingClientRect().top + triggerMargin;
+        } else {
+          showPos = elm.getBoundingClientRect().top + triggerMargin;
+        }
+        if (window.innerHeight > showPos) {
+          var delay = (elm.dataset[dataDelay]) ? elm.dataset[dataDelay] : 0;
+          setTimeout(function (index) {
+            scrollAnimationElm[index].classList.add('show');
+          }.bind(null, i), delay);
+        }
+      }
+    }
+    window.addEventListener('load', scrollAnimationFunc);
+    window.addEventListener('scroll', scrollAnimationFunc);
+
+    var scrollAnimationClass = 'sa';
+    var scrollAnimationShowClass = 'show';
+    var triggerMarginDefault = 300;
+
+    var scrollAnimationElm = document.querySelectorAll('.' + scrollAnimationClass);
+    var scrollAnimationFunc = function () {
+      var dataMargin = scrollAnimationClass + '_margin';
+      var dataTrigger = scrollAnimationClass + '_trigger';
+      var dataDelay = scrollAnimationClass + '_delay';
+      for (var i = 0; i < scrollAnimationElm.length; i++) {
+        var triggerMargin = triggerMarginDefault;
+        var elm = scrollAnimationElm[i];
+        var showPos = 0;
+        if (elm.dataset[dataMargin] != null) {
+          triggerMargin = parseInt(elm.dataset[dataMargin]);
+        }
+        if (elm.dataset[dataTrigger]) {
+          showPos = document.querySelector(elm.dataset[dataTrigger]).getBoundingClientRect().top + triggerMargin;
+        } else {
+          showPos = elm.getBoundingClientRect().top + triggerMargin;
+        }
+        if (window.innerHeight > showPos) {
+          var delay = (elm.dataset[dataDelay]) ? elm.dataset[dataDelay] : 0;
+          setTimeout(function (index) {
+            scrollAnimationElm[index].classList.add('show');
+          }.bind(null, i), delay);
+        }
+      }
+    }
+    window.addEventListener('load', scrollAnimationFunc);
+    window.addEventListener('scroll', scrollAnimationFunc);
+  </script>
+</body>
+
+</html>
