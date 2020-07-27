@@ -348,7 +348,7 @@ textarea {
 #contact textarea {
   height: 20em;
 }
-#contact input[type="submit"] {
+#contact button[type="submit"] {
   position: relative;
   font-size: 18px;
   color: white;
@@ -360,7 +360,7 @@ textarea {
   border-radius: 5px;
   /* z-index: -1; */
 }
-#contact input[type="submit"]:hover {
+#contact button[type="submit"]:hover {
   top: 2px;
   box-shadow: 0 1px 0 #1a4472;
 }
@@ -411,7 +411,7 @@ footer p {
     width: 90%;
     margin: 0 auto 2.5em;
   }
-  #contact input[type="submit"] {
+  #contact button[type="submit"] {
     z-index: -1;
   }
   /* [******************] */
