@@ -1,4 +1,4 @@
-AuthUserFile /basic_authentication/.htpasswd
+AuthUserFile /sibh8907.github.io/basic_authentication/.htpasswd
 AuthGroupFile /dev/null
 AuthName "Input ID and Password."
 AuthType Basic
