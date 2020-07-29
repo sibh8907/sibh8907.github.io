@@ -240,7 +240,7 @@ a:hover {
 header {
   position: fixed;
   width: 100%;
-  background-color: rgba(192,192,192,.5);
+  background-color: rgba(192, 192, 192, 0.5);
 }
 header nav {
   display: flex;
@@ -268,25 +268,35 @@ header nav a {
 article {
   padding-top: 5em;
 }
-/* [ about ] */
-#about {
-  background-image: url(img/P_20190113_010813.jpg);
-  width: 100%;
-  height: 500px;
-  background-size: cover;
-  object-fit: cover;
-  object-position: top;
-  z-index: -100;
-  margin: -5em auto 5em;
-  padding-top: 5em;
-}
-
-/* [ services ] */
-#services {
+#about,
+#services,
+#works,
+#contact {
   max-width: 920px;
   margin: -5em auto 5em;
   padding-top: 5em;
 }
+/* [ about ] */
+#about {
+  padding-top: 10em;
+}
+#about > div {
+  display: flex;
+  justify-content: space-between;
+}
+#about img {
+  border-radius: 50%;
+  max-width: 300px;
+  max-height: 300px;
+}
+#about p {
+  margin: 0 10% 1rem 20%;
+  text-align: left;
+}
+#about > div h2 + p {
+  font-size: 18px;
+}
+/* [ services ] */
 #services .container {
   display: flex;
   justify-content: space-between;
@@ -300,13 +310,7 @@ article {
 #services .box {
   margin: 0 1em;
 }
-
 /* [ works ] */
-#works {
-  max-width: 920px;
-  margin: -5em auto 5em;
-  padding-top: 5em;
-}
 #works ul {
   display: flex;
   flex-wrap: wrap;
@@ -315,6 +319,7 @@ article {
 }
 #works li {
   width: 33%;
+  margin: 0 auto;
 }
 #works img {
   width: 80%;
@@ -324,13 +329,7 @@ article {
   box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.25);
   margin-bottom: 1em;
 }
-
 /* [ contact ] */
-#contact {
-  max-width: 920px;
-  margin: -5em auto 5em;
-  padding-top: 5em;
-}
 #contact label,
 textarea {
   display: block;
@@ -381,32 +380,38 @@ footer p {
 /* [ responsive ] */
 /* [******************] */
 @media screen and (max-width: 768px) {
-  header {
-    background-color: transparent;
-  }
   header nav {
     display: none;
+  }
+  #about {
+    padding-top: 5em;
+  }
+  #about img {
+    margin-bottom: 2em;
   }
   #services {
     width: 90%;
   }
-  #services .container {
-    display: block;
-  }
+  #about > div,
+  #services .container,
   #works ul {
     display: block;
   }
   #works li {
     width: 90%;
-    margin: 0 auto;
   }
   #contact input,
   textarea {
     width: 71%;
   }
+  #about p,
+  #works p,
   #contact p {
     width: 90%;
     margin: 0 auto 2.5em;
+  }
+  #about > div h2 + p {
+    margin-bottom: 1em;
   }
   /* [******************] */
   /* [  hamburger ] */
@@ -449,7 +454,7 @@ footer p {
     flex: none;
     width: 100%;
     height: 3px;
-    background: white;
+    background: var(--color-silver);
     display: flex;
     align-items: center;
     justify-content: center;
