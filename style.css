@@ -288,6 +288,7 @@ article {
   border-radius: 50%;
   max-width: 300px;
   max-height: 300px;
+  margin: 0 5%;
 }
 #about p {
   margin: 0 10% 1rem 20%;
