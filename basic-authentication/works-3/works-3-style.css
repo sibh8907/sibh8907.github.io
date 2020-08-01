@@ -10,8 +10,8 @@ input[type="button"] {
   box-sizing: border-box;
   cursor: pointer;
 }
-input[type="submit"]::-webkit-search-decoration,
-input[type="button"]::-webkit-search-decoration {
+input[type="submit"]:-webkit-search-decoration,
+input[type="button"]:-webkit-search-decoration {
   display: none;
 }
 input[type="submit"]::focus,
