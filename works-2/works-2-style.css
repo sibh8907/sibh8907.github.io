@@ -198,6 +198,7 @@ form {
 /* ↓属性セレクタを使用↓ */
 
 input[type="submit"] {
+  webkit-appearance: none;
   width: 20%;
   font-size: 15px;
   background: linear-gradient(#fff, #eee);
