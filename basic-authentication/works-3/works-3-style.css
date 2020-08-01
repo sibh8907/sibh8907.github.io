@@ -3,9 +3,6 @@ body {
   font-family: Circular, -apple-system, system-ui, Roboto, "Helvetica Neue",
     sans-serif;
 }
-header{
-  justify-content: stretch;
-}
 
 .header-cover {
   background: url(img/9d08d356-59b9-4ac4-9f41-5b9c13c2b211.jpg) no-repeat center
