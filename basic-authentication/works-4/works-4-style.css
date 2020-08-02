@@ -565,4 +565,9 @@ h1 {
   .f-nav-link-2{
     display: none;
   }
+  .main-2-text h1,.main-2-text p,
+  .main-4-text h1,.main-4-text p{
+    margin-bottom: .2rem;
+    font-weight: normal;
+  }
 }
