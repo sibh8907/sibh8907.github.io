@@ -470,6 +470,7 @@ h1 {
     height: 540px;
     object-fit: cover;
     object-position: 100% 100%;
+    filter: brightness(75%);
   }
   .video-text h1 {
     font-size: 32px;
