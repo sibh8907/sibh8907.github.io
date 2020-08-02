@@ -21,8 +21,9 @@ img{
 }
 .logo{
     max-width: 400px;
+    width: auto;
     margin: 30px auto;
-    justify-content: stretch;
+    background-size: contain;
 }
 
 nav ul li{
