@@ -5,7 +5,8 @@ h1,h2,h3,ul,li{
 }
 body{
     color: #666666;
-    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    -webkit-text-size-adjust: 100%;
 }
 header{
     text-align: center;
@@ -19,8 +20,9 @@ img{
     padding: 0 20px;
 }
 .logo{
-    max-width: 400px !important;
+    max-width: 400px;
     margin: 30px auto;
+    justify-content: stretch;
 }
 
 nav ul li{
