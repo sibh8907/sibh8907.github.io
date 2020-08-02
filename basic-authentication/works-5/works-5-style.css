@@ -760,6 +760,7 @@ footer section .footer-logo:hover{
   }
   .sec-3 .container .box div{
     width: 100%;
+    margin: 0 auto 0 10px;
   }
   .sec-3 .container-2{
     display: block;
