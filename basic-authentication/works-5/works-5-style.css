@@ -101,7 +101,7 @@ input[type="submit"],
 input[type="button"] {
   border-radius: 0;
   -webkit-box-sizing: content-box;
-  -webkit-appearance: button;
+  -webkit-appearance: none;
   appearance: button;
   border: none;
   box-sizing: border-box;
