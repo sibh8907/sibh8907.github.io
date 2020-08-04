@@ -806,7 +806,7 @@ footer section .footer-logo:hover{
     display: block;
   }
   .sec-7 li{
-    width: 90%;
+    width: 80%;
   }
   .sec-7 .container>p{
     margin-top: 3em;
@@ -852,7 +852,7 @@ footer section .footer-logo:hover{
     font-weight: bold;
   }
   .table-2{
-    table-layout: auto;
+    /* table-layout: auto; */
     text-align: left;
   }
   .btn{
