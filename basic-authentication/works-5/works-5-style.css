@@ -627,6 +627,7 @@ header button{
   border-radius: 5px;
   font-size: 16px;
   line-height: 27px;
+  background-color:#FFF;
 }
 .sec-12 select[name="hope"]{
   margin-bottom: 0;
